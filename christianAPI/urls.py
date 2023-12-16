@@ -20,6 +20,7 @@ from perezdearceApp import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('usersapi/', views.UserList.as_view()),
-    path('usersapi/<int:pk>', views.UserDetail.as_view())
+    path('usersapi/<int:pk>', views.UserDetail.as_view()),
+    path('',views.register)
 
 ]
